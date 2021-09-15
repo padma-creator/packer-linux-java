@@ -20,7 +20,7 @@ This file contains every value you want to set to your build and to configure yo
 This file contains the packer builder ready to setup the build. All the information must be provided into a "packerjavars.json" to define each required variable value.This file contains every variable defintion with the type and default value.
 # Provisinoners:
 This file use builtin and third-party software to install and configure the machine image after booting.Packer Shell Provisioner runs the JDK software on the instance and perform other necessary configuration tasks.
-# step2 Execute the code:
+# steps to Execute the code:
 packer validate -var-file=packerjavars.json packer-linux-java.json
 apacker build  -var-file=packerjavars.json packer-linux-java.json
 
